@@ -9,5 +9,6 @@ data = url
 qr.add_data(data)
 qr.make(fit=True)
 img = qr.make_image(fill="black",back_color="white")
-file_name="test"+str(random.randint(0,10000000))
+input_file_name=input("Enter File Name: ")
+file_name=input_file_name+str(random.randint(0,10))
 img.save(file_name+".png")
